@@ -1,0 +1,22 @@
+#no-mobile {
+    position: absolute;
+    z-index: 99;
+    height: 100vh;
+    background-color: var(--yellow);
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 32px;
+    top: 0;
+}
+
+/* 스크린이 645보다 작아야 작동 핸드폰만을 위한 스크린 */
+@media screen and (max-width:645px) { 
+    #no-mobile {
+        display: none;
+    }
+}
+
+/* Rotate Landscape 설정도 재미있겠다. */
+    

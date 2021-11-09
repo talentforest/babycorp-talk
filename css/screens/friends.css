@@ -1,0 +1,56 @@
+#friends-display-link {
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    display: block;
+    background-color:  #fafafa;
+    padding: 10px 8px;
+    font-size: 16px;
+    margin-bottom: 10px;
+    margin-top: -10px;
+}
+
+#friends-display-link i {
+    color: rgba(0, 0, 0, 0.2);
+    padding: 5px;
+}
+
+.friends-screen {
+    padding: 0px var(--horizontal-space);
+}
+.friends-screen__channel {
+    margin-top: 25px;
+    border-top: var(--main-border);
+    padding-top: 15px;
+}
+
+.friends-screen__channel-header {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+@keyframes hideSplashScreen {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        visibility: hidden; /* 마우스가 엘리멘트를 그냥 무시하도록 하는 거임. html에서 아예 삭제하려면 자바스크립트가 필요함.*/
+    }
+}
+
+#splash-screen {
+    background-color: var(--yellow);
+    position: absolute;
+    height: 100vh;
+    width: 100vw;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 122px;
+    animation: hideSplashScreen 1s ease-in-out forwards;
+    animation-delay: 2s; 
+}

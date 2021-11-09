@@ -1,0 +1,49 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import "reset.css";
+@import "variables.css";
+
+/* Components */
+@import "components/status-bar.css";
+@import "components/nav-bar.css";
+@import "components/screen-header.css";
+@import "components/user-component.css";
+@import "components/icon-row.css";
+@import "components/alt-screen-header.css";
+@import "components/no-mobile.css";
+
+/* Screens */
+@import "screens/login.css";
+@import "screens/friends.css";
+@import "screens/find.css";
+@import "screens/more.css";
+@import "screens/settings.css";
+@import "screens/chat.css";
+
+/* body에는 모든 스크린에 적용될 수 있는 스타일만 적어놓는 게 좋다. */
+body {
+  font-family: "Open Sans", sans-serif;
+  height: 1000vh;
+  color: #2e363e;
+  padding-top: 50px;
+}
+
+.main-screen {
+    padding: 0px var(--horizontal-space);
+}
+
+.welcome-header {
+    margin: 90px 0px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-weight: 600;
+}
+.welcome-header__title {
+    margin-bottom: 40px;
+    font-size: 25px;
+}
+.welcome-header__text {
+    width: 60%;
+    opacity: 0.7;
+}

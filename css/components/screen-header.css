@@ -1,0 +1,45 @@
+.screen-header {
+    display: flex;
+    top:0;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--horizontal-space);
+    margin-bottom: 15px;
+}
+
+.screen-header__title {
+    font-size: 32px;
+    font-weight: 600;
+}
+
+.screen-header__icons span {
+    margin-left: 25px;
+    position: relative;  
+    /* 밑 코드인 옆의 빨간 점은 이 아이콘을 relative해서 
+    absolute하게 위치한다고 써줘야 한다.... */
+}
+
+@keyframes rotateCog {
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.screen-header__icons .fa-cog:hover {
+    animation: rotateCog 1s linear infinite;
+}
+
+
+.badge-2 {
+    background-color: tomato;
+    border-radius: 2px;
+    width: 4px;
+    height: 4px;
+    display: flex;
+    position: absolute;
+    right: -4px;
+    top: -2px;
+    }
