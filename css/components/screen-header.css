@@ -1,10 +1,16 @@
 .screen-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
     display: flex;
-    top:0;
+    height: 50px;
     justify-content: space-between;
     align-items: center;
     padding: var(--horizontal-space);
-    margin-bottom: 15px;
+    margin-top: 40px;
+    
+    
 }
 
 .screen-header__title {
@@ -19,17 +25,65 @@
     absolute하게 위치한다고 써줘야 한다.... */
 }
 
-@keyframes rotateCog {
-    from{
+@keyframes upAndDownSearch {
+    0% {
         transform: none;
     }
-    to{
-        transform: rotateZ(360deg);
+    50% {
+        transform: translateY(-10px) rotateY(10deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+.screen-header__icons .fa-search:hover {
+    animation: upAndDownSearch 0.8s linear infinite;
+}
+
+@keyframes upAndDownDots {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-10px) rotateY(10deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+.screen-header__icons .fa-comment-dots:hover {
+    animation: upAndDownDots 0.8s linear infinite;
+}
+
+@keyframes upAndDownMusic {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-10px) rotateY(10deg);
+    }
+    100% {
+        transform: none;
+    }
+}
+.screen-header__icons .fa-music:hover {
+    animation: upAndDownMusic 0.8s linear infinite;
+}
+
+@keyframes upAndDownCog {
+    0% {
+        transform: none;
+    }
+    50% {
+        transform: translateY(-10px) rotateY(10deg);
+    }
+    100% {
+        transform: none;
     }
 }
 
 .screen-header__icons .fa-cog:hover {
-    animation: rotateCog 1s linear infinite;
+    animation: upAndDownCog 1s linear infinite;
 }
 
 

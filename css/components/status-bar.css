@@ -6,6 +6,7 @@
     justify-content: center;
     padding: 5px 3px;
     box-sizing: border-box;
+    font-size: 15px;
   }
   .status-bar__column {
     width: 33%;
@@ -23,6 +24,7 @@
     align-items: center;
   }
   
-  .status-bar__column .fa-battery-full {
-    margin: 0px 5px;
+  .status-bar__column .fa-battery-full,
+  .status-bar__column .fa-headphones-alt {
+    margin: 0px 6px;
   }

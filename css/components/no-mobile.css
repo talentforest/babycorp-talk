@@ -1,18 +1,19 @@
 #no-mobile {
-    position: absolute;
+    position: fixed;
     z-index: 99;
-    height: 100vh;
-    background-color: var(--yellow);
-    width: 100vw;
+    height: 100%;
+    background-color: #8E7DBE;
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 32px;
+    color: white;
     top: 0;
 }
 
 /* 스크린이 645보다 작아야 작동 핸드폰만을 위한 스크린 */
-@media screen and (max-width:645px) { 
+@media screen and (max-width:700px) { 
     #no-mobile {
         display: none;
     }

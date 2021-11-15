@@ -5,36 +5,41 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to KokoaTalk Clone</title>
+    <title>Welcome to Baby Corp</title>
 </head>
 <body>
     <div class="status-bar"> 
         <div class="status-bar__column">
-            
-            <span>No Service</span>
+            <i class="fas fa-signal"></i>
+            <span>LG U+</span>
             <i class="fas fa-wifi"></i>
         </div>
         <div class="status-bar__column">
             <span>18:43</span>
         </div>
         <div class="status-bar__column">
-            <span>110%</span>
+            <i class="far fa-bell"></i>
+            <i class="fas fa-headphones-alt"></i>
+            <span>100%</span>
             <i class="fas fa-battery-full fa-lg"></i>
-            <i class="fas fa-bolt"></i>
         </div>
     </div>
 
     <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to KokoaTalk Clone</h1>
-        <p class="welcome-header__text"> If you have a kokoaTalk Clone Account,</p> 
+        <h1 class="welcome-header__logo">
+            <img src="./photos/BabyCorpLogo.png" />
+        </h1>
+        <h1 class="welcome-header__title">
+            <img src="./photos/BabyCorpGreeting.png" />
+        </h1>
         <p class="welcome-header__text"> Log in with your email or phone number.</p>
     </header>
 
-    <form action="friends.html" method="get" id="login-form">
-        <input name="username" type="text" placeholder="Email or phone number" />
-        <input name="password" type="password" placeholder="Password" />
+    <form action="splash-screen_members.html" method="get" id="login-form">
+        <input name="username" type="text" placeholder="Email or phone number" required />
+        <input name="password" type="password" minlength="8" placeholder="Password" required />
         <input name="submit" type="submit" value="Log In" />
-        <a href="a">Find KokoaTalk Clone Account or Password</a>
+        <a href="a">Find Baby Corporation Account or Password</a>
     </form>
 
     <div id="no-mobile">

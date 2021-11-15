@@ -1,0 +1,9 @@
+.suggestions__title {
+    margin: 20px 0px 30px 0px;
+    color: white;
+    font-weight: 600;
+    background-color: rgb(85, 116, 103);
+    width:fit-content;
+    border-radius: 20px;
+    padding: 5px 10px;
+}

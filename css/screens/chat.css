@@ -1,6 +1,6 @@
 #chat-screen {
-    background-color: #abc1d1;
-    height: 500vh;
+    background-color: #eff1c9;
+    height: 100vh;
 }
 
 #chat-screen .alt-header,
@@ -8,7 +8,7 @@
     top: 0;
     position: fixed;  /* fixed가 되면 다른 box들과는 다른 layer가 된다. main div를 덮고 있다. */
     width: 100%;
-    background-color: #abc1d1;
+    background-color: #eff1c9;
     box-sizing: border-box;
 }
 
@@ -21,37 +21,8 @@
     z-index: 1;
 }
 
-@keyframes fadeIn {
-    from {
-        transform: translateY(30px);
-        opacity: 0;
-    }
-    to {
-        transform: none;
-        opacity: 1;
-    }
-}
-
-.main-chat {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;  /* column일때 중심축이 바뀌니까 jus -> align */
-    animation: fadeIn 0.8s linear;
-}
-
-.chat__timestamp {
-    color: white;
-    background-color: #92a4b2;
-    padding: 10px;
-    font-size: 14px;
-    border-radius: 25px;
-    margin-bottom: 20px;
-}
-
 .message-row {
     width: 100%;
-    display: flex;
     margin-bottom: 25px;
 }
 
@@ -69,11 +40,12 @@
 
 .message__bubble {
     background-color: white;
-    padding: 10px 13px;
-    font-size: 18px;
+    padding: 10px;
+    font-size: 16px;
     border-radius: 15px;
     border-top-left-radius: 0px;
     margin-right: 5px;
+    max-width: 350px;
 }
 
 .message__info {
@@ -88,12 +60,71 @@
     font-size: 14px;
 }
 
-.message-row--own {
+.main-chat {
+    margin-top: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+
+.chat__timestamp {
+    color: white;
+    background-color: #bbbbbb;
+    padding: 8px;
+    font-size: 12px;
+    border-radius: 25px;
+    margin-bottom: 20px;
+}
+
+@keyframes messageAnimation {
+    0% {
+        transform: translateY(10px);
+        opacity: 0;
+    }
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+.messageAnimation1,
+.messageAnimation2,
+.messageAnimation3,
+.messageAnimation4,
+.messageAnimation5,
+.messageAnimation6 {   
+    display: flex;
+    flex-direction: row;
+    animation: messageAnimation 0.5s forwards;
+    opacity: 0;
+}
+
+.messageAnimation2 {
+    animation-delay: 2s;
+}
+
+.messageAnimation3 {
+    animation-delay: 4s;
     justify-content: flex-end;
 }
 
+.messageAnimation4 {
+    animation-delay: 5s;
+}
+
+.messageAnimation5 {
+    animation-delay: 8s;
+    justify-content: flex-end;
+}
+
+.messageAnimation6 {
+    animation-delay: 9s;
+}
+
+
 .message-row--own .message__bubble {
-    background-color: var(--yellow);
+    background-color: rgb(174, 174, 252);
     border-top-right-radius: 0;
     border-top-left-radius: 15px;
     margin-left: 5px;

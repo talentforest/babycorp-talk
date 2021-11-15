@@ -3,41 +3,96 @@
 }
 
 .more-suggestions {
-    margin-top: 30px;
+    
     border-top: var(--main-border);
-    padding-top: 10px;
 }
 
-.more-suggestions__title {
-    margin-top: 10px;
-    margin-bottom: 20px;
-    font-weight: 600;
+.more-suggestions__row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .more-suggestions__icons {
     display: flex;
-}
-
-.more-suggestions__icon {
-    margin-right: 30px;
-    display: flex;
     flex-direction: column;
-    align-items: center;
+    margin-bottom: 30px;
 }
 
-.more-suggestions__icon-image {
-    width: 60px;
-    height: 60px;
-    background-color: var(--yellow);
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 20px;
+.more-suggestions__icons-location {
     margin-bottom: 10px;
 }
 
-.more-suggestions__icon-image i {
-    font-size: 32px;
+.more-suggestions__icon-weather {
+    font-size: 25px;
+    display: flex;  
+    align-items: center;
+}
+
+@keyframes rotateWeather {
+    from{
+        transform: none;
+    }
+    to{
+        transform: rotateZ(360deg);
+    }
+}
+
+.more-suggestions__icon-weather i {
+    color: rgb(255, 238, 7);
+    animation: rotateWeather 8s linear infinite;
+}
+
+.more-suggestions__icon-weather span {
+    font-size: 50px;
+    font-weight: 600;
+    margin-left: 10px;
+}
+
+.more-suggestions__icon-weather span:nth-child(3) {
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.more-suggestions__icon-weather i:last-child {
+    display: flex;
+}
+
+.more-suggestions__icon {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.more-suggestions__icon-news-editor {
+    font-size: 15px;
+    color: rgb(55, 75, 64);
+    border: solid 1px green;
+    border-radius: 10px;
+    padding: 2px 8px;
+}
+
+.more-suggestions__icon-news-updates {
+    font-size: 10px;
     color: white;
+    background-color: rgb(255, 150, 131);
+    border-radius: 20px;
+    padding: 5px 5px;
+    margin-left: 5px;
+}
+
+.more-suggestions__icon img {
+    width: 120px;
+    height: 120px;
+    background-color: rgb(130, 166, 190);
+    border-radius: 20px;
+    margin-right: 10px;
+}
+
+.more-suggestions__icon-news-title {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 10px;
 }

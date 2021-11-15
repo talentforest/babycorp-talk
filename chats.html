@@ -5,26 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chats - Kokoa clone</title>
+    <title>Chats with Members</title>
 </head>
 <body>
-    <div class="status-bar"> 
-        <div class="status-bar__column">
-            
-            <span>No Service</span>
-            <i class="fas fa-wifi"></i>
+    <div class="top_fixed_screen">
+        <div class="status-bar"> 
+            <div class="status-bar__column">
+                <i class="fas fa-signal"></i>
+                <span>LG U+</span>
+                <i class="fas fa-wifi"></i>
+            </div>
+            <div class="status-bar__column">
+                <span>18:43</span>
+            </div>
+            <div class="status-bar__column">
+                <i class="far fa-bell"></i>
+                <i class="fas fa-headphones-alt"></i>
+                <span>100%</span>
+                <i class="fas fa-battery-full fa-lg"></i>
+            </div>
         </div>
-        <div class="status-bar__column">
-            <span>18:43</span>
-        </div>
-        <div class="status-bar__column">
-            <span>110%</span>
-            <i class="fas fa-battery-full fa-lg"></i>
-            <i class="fas fa-bolt"></i>
-        </div>
-    </div>
 
-    <header class="screen-header">
+        <header class="screen-header">
         <h1 class="screen-header__title">Chats</h1>
         <div class="screen-header__icons">
             <span><i class="fas fa-search fa-lg"></i></span>
@@ -32,44 +34,232 @@
             <span><i class="fas fa-music fa-lg"></i></span>
             <span><i class="fas fa-cog fa-lg"></i></span>
         </div>
-    </header>
-
-    <main class="main-screen">
-        <a href="chat.html">
+        </header>
+    </div>
+    <div class="bottom_screen">
+        <main class="main-screen">
+            <a href="chat-me.html">
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img 
+                            src="photos/Timothy.jpeg"
+                            class="user-component__avatar user-component__avatar"/>
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">
+                                <div class="myOwn">Me</div>
+                                Timothy
+                                <i class="fas fa-thumbtack fa-xs"></i>
+                            </h4>
+                            <h6 class="user-component__subtitle">Don't forget: Granma is comming today!</h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column-timeandmessage">
+                        <span class="user-component__time">12:11</span>    
+                    </div>
+                </div>
+            </a>
+            <a href="chat.html">
+                <div class="user-component">
+                    <div class="user-component__column">
+                        <img 
+                            src="photos/BossBaby.jpeg"
+                            class="user-component__avatar user-component__avatar"/>
+                        <div class="user-component__text">
+                            <h4 class="user-component__title">Boss Baby</h4>
+                            <h6 class="user-component__subtitle">Tim! Come here! Plz!</h6>
+                        </div>
+                    </div>
+                    <div class="user-component__column-timeandmessage">
+                        <span class="user-component__time">20:52</span>
+                        <div class="badge">1</div>
+                    </div>
+                </div>
+            </a>
+            <a href="chat-staci.html">
             <div class="user-component">
                 <div class="user-component__column">
                     <img 
-                        src="photos/DA.jpg"
+                        src="photos/staci.jpeg"
                         class="user-component__avatar user-component__avatar"/>
                     <div class="user-component__text">
-                        <h4 class="user-component__title">전예림</h4>
-                        <h6 class="user-component__subtitle">Please check My Kokoa Account Info</h6>
+                        <h4 class="user-component__title">Staci</h4>
+                        <h6 class="user-component__subtitle">Baby Corp is in situation now! Can you take him here right now?</h6>
                     </div>
                 </div>
-                <div class="user-component__column">
-                    <span class="user-component__time">21:22</span>
+                <div class="user-component__column-timeandmessage">
+                    <span class="user-component__time">21:36</span>
                     <div class="badge">1</div>
                 </div>
             </div>
+            </a>
+        
+        <a href="chat-jimbo.html">
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img 
+                        src="photos/Jimbo.jpeg"
+                        class="user-component__avatar user-component__avatar"/>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Jimbo</h4>
+                        <h6 class="user-component__subtitle">New cookies are arrived!</h6>
+                    </div>
+                </div>
+                <div class="user-component__column-timeandmessage">
+                    <span class="user-component__time">16:40</span>
+                    <div class="badge">2</div>
+                </div>
+            </div>
         </a>
-    </main>
+        
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img 
+                        src="photos/Simmons.png"
+                        class="user-component__avatar user-component__avatar"/>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Simmons</h4>
+                        <h6 class="user-component__subtitle">New product is launched!</h6>
+                    </div>
+                </div>
+                <div class="user-component__column-timeandmessage">
+                    <span class="user-component__time">13:17</span>
+                </div>
+            </div>
+        
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img 
+                        src="photos/Frankie.png"
+                        class="user-component__avatar user-component__avatar"/>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Frankie</h4>
+                        <h6 class="user-component__subtitle">Oh Okay!</h6>
+                    </div>
+                </div>
+                <div class="user-component__column-timeandmessage">
+                    <span class="user-component__time">17:33</span>
+                </div>
+            </div>
 
-    <!-- nav>ul>li*4>a -->
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img 
+                        src="photos/brayden.png"
+                        class="user-component__avatar user-component__avatar"/>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Brayden</h4>
+                        <h6 class="user-component__subtitle">Are you still mad at me?</h6>
+                    </div>
+                </div>
+                <div class="user-component__column-timeandmessage">
+                    <span class="user-component__time">12:44</span>
+                </div>
+            </div>
+
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img 
+                        src="photos/CEO baby.png"
+                        class="user-component__avatar user-component__avatar"/>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">CEO Baby</h4>
+                        <h6 class="user-component__subtitle">Good Job!</h6>
+                    </div>
+                </div>
+                <div class="user-component__column-timeandmessage">
+                    <span class="user-component__time">10:52</span>
+                </div>
+            </div>
+
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img 
+                        src="photos/BabyCorpLogo.png"
+                        class="user-component__avatar user-component__avatar"/>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Baby Corp.</h4>
+                        <h6 class="user-component__subtitle">Breaking News</h6>
+                    </div>
+                </div>
+                <div class="user-component__column-timeandmessage">
+                    <span class="user-component__time">08:29</span>
+                </div>
+            </div>
+
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img 
+                        src="photos/Triplets.jpeg"
+                        class="user-component__avatar user-component__avatar"/>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Triplets</h4>
+                        <h6 class="user-component__subtitle">Emergency!</h6>
+                    </div>
+                </div>
+                <div class="user-component__column-timeandmessage">
+                    <span class="user-component__time">06:30</span>
+                </div>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img 
+                        src="photos/Tina.jpeg"
+                        class="user-component__avatar user-component__avatar"/>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Tina Templeton</h4>
+                        <h6 class="user-component__subtitle">Wow You are Best Dad!</h6>
+                    </div>
+                </div>
+                <div class="user-component__column-timeandmessage">
+                    <span class="user-component__time">08:05</span>
+                </div>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img 
+                        src="photos/Scooter.jpg"
+                        class="user-component__avatar user-component__avatar"/>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Scooter Buskie</h4>
+                        <h6 class="user-component__subtitle">aasdfgoweidf</h6>
+                    </div>
+                </div>
+                <div class="user-component__column-timeandmessage">
+                    <span class="user-component__time">11:32</span>
+                </div>
+            </div>
+            <div class="user-component">
+                <div class="user-component__column">
+                    <img 
+                        src="photos/Amal.png"
+                        class="user-component__avatar user-component__avatar"/>
+                    <div class="user-component__text">
+                        <h4 class="user-component__title">Amal</h4>
+                        <h6 class="user-component__subtitle">This paperwork would be hard...</h6>
+                    </div>
+                </div>
+                <div class="user-component__column-timeandmessage">
+                    <span class="user-component__time">14:49</span>
+                </div>
+            </div>
+        
+        </main>
+    </div>
     <nav class="nav">
         <ul class="nav__list">
             <li class="nav__btn">
-                <a class="nav__link" href="friends.html">
+                <a class="nav__link" href="members.html">
                     <i class="far fa-user fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
                 <a class="nav__link" href="chats.html">
-                    <span class="nav__notification badge">1</span>
+                    <span class="nav__notification badge">4</span>
                     <i class="fas fa-comment fa-2x"></i>
                 </a>
             </li>
             <li class="nav__btn">
-                <a class="nav__link" href="find.html">
+                <a class="nav__link" href="community.html">
                     <i class="fas fa-search fa-2x"></i>
                 </a>
             </li>

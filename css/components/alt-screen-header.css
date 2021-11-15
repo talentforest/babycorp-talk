@@ -1,6 +1,5 @@
 .alt-header {
     padding: var(--horizontal-space);
-    margin-bottom: 15px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -8,11 +7,13 @@
 
 .alt-header__column {
     width: 33%;
+    padding-top: 20px;
 }
 
 .alt-header__title {
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 600;
+    
 }
 
 .alt-header__column:first-child {
@@ -33,3 +34,8 @@
     margin-left: 20px;
 }
 
+.profile-screen .alt-header__column:last-child i,
+.profile-screen2 .alt-header__column:last-child i {
+    font-size: 25px;
+    margin-left: 20px;
+}

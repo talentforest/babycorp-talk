@@ -1,0 +1,40 @@
+.profile-avatar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 270px 0px 30px 0px;
+}
+
+.profile-avatar img {
+    width: 120px;
+    height: 120px;
+    border-radius: 30px;
+    margin-bottom: 10px;
+}
+
+.profile-avatar span {
+    font-weight: 600;
+}
+
+.profile-edit {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    border-top: var(--main-border);
+    padding-top: 30px;
+}
+
+.profile-edit__column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile-edit__column i {
+    font-size: 40px;
+    margin-bottom: 10px;   
+}
+
+.profile-edit__column span {
+    font-size: 14px;
+}
