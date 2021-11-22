@@ -121,10 +121,11 @@
 }
 
 .user-component__subtitle {
-  margin-top: 6px;
+  margin-top: 8px;
   font-size: 10px;
   color: rgba(0, 0, 0, 0.5);
   margin-right: 10px;
+  line-height: 14px;
 }
 
 .user-component__subtitle i {

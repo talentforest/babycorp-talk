@@ -45,10 +45,11 @@
   position: absolute;
   top: 0;
   left: 0;
-  border-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   width: 350px;
-  height: 650px;
+  height: 100vh;
 
-  animation: hideSplashScreen 2s ease-in-out forwards;
+  animation: hideSplashScreen 2.5s ease-in-out forwards;
   animation-delay: 0.5s;
 }
