@@ -36,15 +36,13 @@
   }
 }
 
-.whole-screen {
-  position: relative;
-}
-
 #splash-screen img {
-  z-index: 20;
-  position: absolute;
+  z-index: 95;
+  position: fixed;
   top: 0;
-  left: 0;
+  left: 50%;
+  margin: 0px auto;
+  transform: translateX(-50%);
   border-top-left-radius: 50px;
   border-top-right-radius: 50px;
   width: 350px;
