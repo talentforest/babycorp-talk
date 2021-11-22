@@ -1,30 +1,34 @@
+.whole-screen {
+  position: relative;
+}
+
 .status-bar {
-    position: fixed;
-    top: 0px;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    padding: 5px 3px;
-    box-sizing: border-box;
-    font-size: 15px;
-  }
-  .status-bar__column {
-    width: 33%;
-  }
-  .status-bar__column:first-child span {
-    margin-right: 2px;
-  }
-  .status-bar__column:nth-child(2) {
-    display: flex;
-    justify-content: center;
-  }
-  .status-bar__column:last-child {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .status-bar__column .fa-battery-full,
-  .status-bar__column .fa-headphones-alt {
-    margin: 0px 6px;
-  }
+  position: absolute;
+  margin: 0px 30px;
+  top: 5px;
+  width: 290px;
+  display: flex;
+  justify-content: center;
+  padding: 5px 3px;
+  font-size: 12px;
+  box-sizing: border-box;
+  font-weight: 500;
+}
+
+.status-bar__column {
+  width: 33%;
+}
+.status-bar__column:first-child span {
+  margin: 0px 5px;
+}
+
+.status-bar__column:last-child {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.status-bar__column .fa-battery-full,
+.status-bar__column .fa-signal {
+  margin: 0px 5px;
+}

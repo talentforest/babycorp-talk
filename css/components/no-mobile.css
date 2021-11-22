@@ -1,23 +1,23 @@
 #no-mobile {
-    position: fixed;
-    z-index: 99;
-    height: 100%;
-    background-color: #8E7DBE;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 32px;
-    color: white;
-    top: 0;
+  position: fixed;
+  z-index: 99;
+  height: 100%;
+  background-color: #8e7dbe;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+  color: white;
+  top: 0;
+  left: 0;
 }
 
 /* 스크린이 645보다 작아야 작동 핸드폰만을 위한 스크린 */
-@media screen and (max-width:700px) { 
-    #no-mobile {
-        display: none;
-    }
+@media screen and (max-width: 700px) {
+  #no-mobile {
+    display: none;
+  }
 }
 
 /* Rotate Landscape 설정도 재미있겠다. */
-    

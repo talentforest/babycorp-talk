@@ -1,145 +1,142 @@
 .recommended-friends {
-    border-top: var(--main-border);
-    border-bottom: var(--main-border);
+  border-top: var(--main-border);
+  border-bottom: var(--main-border);
 }
 
 .open-chat__header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .open-chat__header span {
-    opacity: 0.6;
-    margin-top: -10px;
+  opacity: 0.6;
+  font-size: 12px;
 }
 
 .open-post-set {
-    display: flex;
-    flex-direction: column;
-    padding: 10px 0px;
-    border-top: var(--main-border);
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0px;
+  border-top: var(--main-border);
 }
 
 .open-post {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .open-post__column {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
 }
 
 .open-post__title {
-    font-weight: 600;
-    margin-bottom: 18px;
+  font-weight: 600;
+  font-size: 14px;
+  margin-bottom: 18px;
 }
 
 .open-post__popular-hashtags {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    padding: 0px 80px 40px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 0px 10px 10px 10px;
 }
 
 .open-post__popular-hashtag {
-    
-    background-color: papayawhip;
-    width: fit-content;
-    padding: 6px 8px;
-    border-radius: 15px;
-    margin: 6px 5px;
-    font-size: 12px;
+  background-color: papayawhip;
+  width: fit-content;
+  padding: 6px 8px;
+  border-radius: 15px;
+  margin: 6px 5px;
+  font-size: 12px;
 }
 
 .open-post__hashtags {
-    text-transform: uppercase;
-    opacity: 0.6;
+  text-transform: uppercase;
+  opacity: 0.6;
+  font-size: 10px;
 }
 
 .open-post__members {
-    margin-top: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  margin-top: 7px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .open-post__members img {
-    width: 15px;
-    height: 15px;
-    border-radius: 50%;
-    margin-right: 5px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  margin-right: 5px;
 }
 
 .open-post__member-count {
-    opacity: 0.5;
-    margin-top:-0.1px;
-    font-size: 14px;
+  opacity: 0.5;
+  font-size: 12px;
 }
 
 .open-post__members .divider {
-    width: 1px;
-    height: 15px;
-    margin: 0 5px;
-    margin-top: 1px;
-    background-color: rgba(0, 0, 0, 0.3);
+  width: 1px;
+  height: 10px;
+  margin: 0 5px;
+
+  background-color: rgba(0, 0, 0, 0.3);
 }
 
 .open-post__member-status {
-    color: #ffb0e0;
-    font-size: 15;
-    margin-top: -0.23px;
+  color: #ffb0e0;
+  font-size: 12px;
 }
 
 .open-post__photo {
-    position: relative;
+  position: relative;
 }
 
 .open-post__photo img {
-    width: 120px;
-    height: 120px;
-    border-radius: 10px;
-    
+  width: 100px;
+  height: 100px;
+  border-radius: 10px;
 }
 
 .open-post__heart-count {
-    background-color: rgba(0, 0, 0, 0.6);
-    color: white;
-    padding: 5px;
-    border-radius: 20px;
-    display: flex;
-    align-items: center;
-    position: absolute;
-    bottom: 8px;
-    right: 8px;
-    font-size: 12px;
+  background-color: rgba(0, 0, 0, 0.6);
+  color: white;
+  padding: 3px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  bottom: 8px;
+  right: 8px;
+  font-size: 10px;
 }
 
 .open-post__heart-count span {
-    margin-left: 3px;
+  margin-left: 3px;
 }
 
 @keyframes heartBeat {
-    0%{
-        color: white;
-        transform: none;
-    }
-    50%{
-        color: tomato;
-        transform: scale(1.1);
-    }
-    100%{
-        color: white;
-        transform: none;
-    }
+  0% {
+    color: white;
+    transform: none;
+  }
+  50% {
+    color: tomato;
+    transform: scale(1.1);
+  }
+  100% {
+    color: white;
+    transform: none;
+  }
 }
 
 .open-post__heart-count:hover i {
-    will-change: transform; /* will-change는 그래픽카드를 이용해서 애니메이션을 가속화, 브라우저활동을 돕는다. */
-    animation: heartBeat 1s linear infinite;
+  will-change: transform; /* will-change는 그래픽카드를 이용해서 애니메이션을 가속화, 브라우저활동을 돕는다. */
+  animation: heartBeat 1s linear infinite;
 }

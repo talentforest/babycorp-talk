@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Arvo:wght@400;700&family=Libre+Baskerville&family=Roboto+Slab:wght@500&family=Shippori+Antique&family=Ubuntu:ital,wght@0,400;1,300&family=Varela+Round&display=swap");
 @import "reset.css";
 @import "variables.css";
 
@@ -23,83 +23,123 @@
 
 /* body에는 모든 스크린에 적용될 수 있는 스타일만 적어놓는 게 좋다. */
 body {
-  font-family: "Open Sans", sans-serif;
-  height: 200vh;
+  font-family: "Varela Round";
+  font-size: 12px;
+  height: 100vh;
   color: #2e363e;
-  
-  background-color: #b293ff;
+  background-color: rgb(255, 205, 172);
+}
+
+.whole-screen,
+.whole-screen-chat {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 350px;
+  margin: 10px auto;
+  border-radius: 50px;
+  top: 0;
+  height: 650px;
+  background-color: #fff3be;
+  box-shadow: 0px 1px 20px rgb(97, 97, 97);
+}
+
+.whole-screen-chat {
+  background-color: #b1b3fd;
 }
 
 .top_fixed_screen {
-    position: fixed;
-    top: 0;
-    border-bottom-left-radius: 50px;
-    border-bottom-right-radius: 50px;
-    background-color: #f8b1bb;
-    width: 100%;
-    height: 130px;
-    z-index: 10;
+  top: 0;
+  margin: 0px 115px;
+  position: absolute;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: rgb(41, 41, 41);
+  width: 120px;
+  height: 25px;
+  z-index: 20;
+}
+
+.main-screen {
+  padding: 0px 20px;
+}
+
+.friends-screen {
+  padding: 20px 20px 50px 20px;
+  border-radius: 50px;
+  background-color: aliceblue;
+  overflow-y: scroll;
+  z-index: 5;
+}
+
+.friends-screen::-webkit-scrollbar {
+  display: none !important;
 }
 
 .bottom_screen {
-    background-color: #bae2c5;
-    border-radius: 50px;
-    margin-top: 150px;
-    padding-top: 20px;
-    height: 100%;
+  padding: 20px 20px 70px 20px;
+  border-radius: 50px;
+  background-color: aliceblue;
+  overflow-y: scroll;
+}
+
+.bottom_screen::-webkit-scrollbar {
+  display: none !important;
 }
 
 .profile-screen,
 .profile-screen2 {
-    height: 700px;
-    background-color: rgb(255, 174, 0);
-    color: white;
+  height: 700px;
+  background-color: rgb(255, 174, 0);
+  color: white;
 }
 
 .profile-screen2 {
-    background-color: rgb(65, 92, 247);
-}
-
-.main-screen {
-    padding: 0px var(--horizontal-space);
+  background-color: rgb(65, 92, 247);
 }
 
 .welcome-header {
-    margin: 20px 0px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 @keyframes moveLogo {
-    0% {
-        transform: none;
-    }
-    50% {
-        transform: translateY(-10px) rotateY(10deg);
-    }
-    100% {
-        transform: none;
-    }
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px) rotateY(10deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 .welcome-header__logo img {
-    width: 200px;
-    height: 150px;
-    margin-top: 20px;
-    margin-bottom: 30px;
-    animation: moveLogo 1s ease-in-out infinite;
+  width: 120px;
+  height: 120px;
+  margin-top: 60px;
+  margin-bottom: 20px;
+  animation: moveLogo 1s ease-in-out infinite;
 }
 
 .welcome-header__title img {
-    width: 450px;
-    height: 40px;
-    margin-bottom: 60px;
+  width: 280px;
+  height: 28px;
+  margin-bottom: 30px;
 }
 
 .welcome-header__text {
-    width: 60%;
-    font-size: 16px;
-    opacity: 0.7;
-    text-align: center;
+  width: 50%;
+  font-size: 14px;
+  line-height: 20px;
+  opacity: 0.7;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.whole-screen .chat-screen {
+  background-color: aquamarine;
 }

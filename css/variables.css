@@ -1,6 +1,6 @@
 :root {
-    --yellow: #fae100;
-    --horizontal-space: 25px;
-    --main-border: 1px solid rgba(0, 0, 0, 0.1);
+  --yellow: #fae100;
+  --horizontal-space: 25px;
+  --main-border: 1px solid rgba(0, 0, 0, 0.1);
 }
 /* 계속해서 반복해 사용할 것 같은 요소들은 변수로 만들어 사용하는 것이 좋다. */

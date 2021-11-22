@@ -1,41 +1,82 @@
-.alt-header {
-    padding: var(--horizontal-space);
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+.alt-header,
+.chat-screen-timothy,
+.chat-screen-bossbaby,
+.chat-screen-staci,
+.chat-screen-Jimbo,
+.alt-header-settings {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.chat-screen-timothy {
+  margin-top: -320px;
+}
+
+.chat-screen-bossbaby {
+  margin-top: -60px;
+}
+
+.chat-screen-staci {
+  margin-top: -180px;
+}
+
+.chat-screen-Jimbo {
+  margin-top: -310px;
+}
+
+.alt-header-settings {
+  margin-top: 30px;
 }
 
 .alt-header__column {
-    width: 33%;
-    padding-top: 20px;
+  width: 33%;
+  margin-top: 0px;
+  font-size: 12px;
 }
 
 .alt-header__title {
-    font-size: 24px;
-    font-weight: 600;
-    
+  font-size: 14px;
+  font-weight: 600;
 }
 
 .alt-header__column:first-child {
-    margin-right: auto;
+  margin-right: auto;
 }
 
 .alt-header__column:nth-child(2) {
-    text-align: center;
+  text-align: center;
 }
 
 .alt-header__column:last-child {
-    margin-left: auto;
-    display: flex;
-    justify-content: flex-end;
+  display: flex;
+  justify-content: flex-end;
 }
 
 .alt-header__column span:last-child {
-    margin-left: 20px;
+  margin-left: 20px;
 }
 
 .profile-screen .alt-header__column:last-child i,
 .profile-screen2 .alt-header__column:last-child i {
-    font-size: 25px;
-    margin-left: 20px;
+  font-size: 18px;
+  padding-left: 20px;
+}
+
+.profile-screen .alt-header,
+.profile-screen2 .alt-header {
+  margin-top: -120px;
+}
+
+.chat-screen .alt-header {
+  margin-top: 150px;
+}
+
+.chat-screen-bossbaby .alt-header {
+  margin-top: 200px;
+}
+
+.chat-screen-timothy .alt-header {
+  padding-top: -100px;
 }

@@ -1,91 +1,62 @@
-#chat-screen {
-    background-color: #eff1c9;
-    height: 100vh;
-}
-
-#chat-screen .alt-header,
-#chat-screen .status-bar { 
-    top: 0;
-    position: fixed;  /* fixed가 되면 다른 box들과는 다른 layer가 된다. main div를 덮고 있다. */
-    width: 100%;
-    background-color: #eff1c9;
-    box-sizing: border-box;
-}
-
-#chat-screen  .status-bar {
-    z-index: 2;
-}
-
-#chat-screen .alt-header {  
-    top: 10px;
-    z-index: 1;
-}
-
 .message-row {
-    width: 100%;
-    margin-bottom: 25px;
+  width: 100%;
+  margin-bottom: 25px;
 }
 
 .message-row img {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  margin-right: 15px;
 }
 
 .message__author {
-    margin-bottom: 8px;
-    display: block;
+  margin-bottom: 8px;
+  display: block;
 }
 
 .message__bubble {
-    background-color: white;
-    padding: 10px;
-    font-size: 16px;
-    border-radius: 15px;
-    border-top-left-radius: 0px;
-    margin-right: 5px;
-    max-width: 350px;
+  background-color: white;
+  padding: 5px 10px;
+  font-size: 12px;
+  line-height: 16px;
+  border-radius: 15px;
+  border-top-left-radius: 0px;
+  margin-right: 5px;
+  max-width: 350px;
 }
 
 .message__info {
-    display: flex;
-    align-items: flex-end;
-    margin-right: 5px;
+  display: flex;
+  align-items: flex-end;
+  margin-right: 5px;
 }
 
 .message__author,
 .message__time {
-    opacity: 0.7;
-    font-size: 14px;
-}
-
-.main-chat {
-    margin-top: 70px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    
+  opacity: 0.7;
+  font-size: 10px;
 }
 
 .chat__timestamp {
-    color: white;
-    background-color: #bbbbbb;
-    padding: 8px;
-    font-size: 12px;
-    border-radius: 25px;
-    margin-bottom: 20px;
+  color: white;
+  margin: 0px auto 30px auto;
+  background-color: #bbbbbb;
+  padding: 5px;
+  width: fit-content;
+  font-size: 9px;
+  border-radius: 25px;
 }
 
 @keyframes messageAnimation {
-    0% {
-        transform: translateY(10px);
-        opacity: 0;
-    }
-    100% {
-        transform: none;
-        opacity: 1;
-    }
+  0% {
+    transform: translateY(10px);
+    opacity: 0;
+  }
+  100% {
+    transform: none;
+    opacity: 1;
+  }
 }
 
 .messageAnimation1,
@@ -93,130 +64,140 @@
 .messageAnimation3,
 .messageAnimation4,
 .messageAnimation5,
-.messageAnimation6 {   
-    display: flex;
-    flex-direction: row;
-    animation: messageAnimation 0.5s forwards;
-    opacity: 0;
+.messageAnimation6 {
+  display: flex;
+  flex-direction: row;
+  animation: messageAnimation 0.5s forwards;
+  opacity: 0;
 }
 
 .messageAnimation2 {
-    animation-delay: 2s;
+  animation-delay: 2s;
 }
 
 .messageAnimation3 {
-    animation-delay: 4s;
-    justify-content: flex-end;
+  animation-delay: 4s;
+  justify-content: flex-end;
 }
 
 .messageAnimation4 {
-    animation-delay: 5s;
+  animation-delay: 5s;
 }
 
 .messageAnimation5 {
-    animation-delay: 8s;
-    justify-content: flex-end;
+  animation-delay: 8s;
+  justify-content: flex-end;
 }
 
 .messageAnimation6 {
-    animation-delay: 9s;
+  animation-delay: 9s;
 }
-
 
 .message-row--own .message__bubble {
-    background-color: rgb(174, 174, 252);
-    border-top-right-radius: 0;
-    border-top-left-radius: 15px;
-    margin-left: 5px;
-    margin-right: 5px;
+  background-color: rgb(255, 236, 195);
+  border-top-right-radius: 0;
+  border-top-left-radius: 15px;
+  margin-left: 5px;
+  margin-right: 5px;
 }
 
-.message-row--own .message__info { /* 왜냐하면 message__info도 flexbox라서 적어줘야 한다. */
-    flex-direction: row-reverse;
+.message-row--own .message__info {
+  /* 왜냐하면 message__info도 flexbox라서 적어줘야 한다. */
+  flex-direction: row-reverse;
+}
+
+.bottom_screen {
+  position: relative;
 }
 
 .reply {
-    position: fixed;
-    bottom: 0;
-    width: 100%;
-    background-color: white;
-    display: flex;
-    justify-content: space-between;
-    padding: 5px 25px;
-    box-sizing: border-box;
-    align-items: center;
-    transition: all 0.3s ease-in-out;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 55px;
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  background-color: white;
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
 }
 
 .reply .reply__column:first-child {
-    width: 5%;
-    padding-right: 20px
+  width: 5%;
+  margin: 0px 5px 0px 15px;
+  font-size: 14px;
 }
 
 .reply .reply__column:last-child {
-    width: 95%;
-    position: relative;
-  }
-  
-  .reply i {
-    opacity: 0.5;
-  }
-  
-  .reply input {
-    padding: 15px;
-    width: 100%;
-    border: var(--main-border);
-    border-radius: 25px;
-    box-sizing: border-box;
-    transition: all 0.3s ease-in-out;
-  }
-  
-  .reply__column:last-child > i,
-  .reply__column:last-child button {
-    position: absolute;
-    right: 3px;
-    top: 3px;
-  }
-  
-  .reply__column:last-child > i {
-    right: 50px;
-    top: 3.5px;
-    font-size: 40px;
-  }
-  
-  .reply__column button {
-    background-color: var(--yellow);
-    border: none;
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-  }
-  
-  .reply__column button i {
-    opacity: 1;
-  }
-  .reply__column button:focus,
-  .reply__column button:active {
-    outline: none;
-  }
+  width: 95%;
+  margin: 0px 10px 0px 5px;
+  position: relative;
+}
 
-  .reply .reply__column:first-child,
-  .reply .fa-smile-wink,
-  .reply button {
-    transition: opacity 0.3s ease-in-out;
-  }
+.reply i {
+  opacity: 0.5;
+}
 
-  .reply:focus-within .reply__column:first-child,
-  .reply:focus-within .fa-smile-wink,
-  .reply:focus-within button {
-    opacity: 0;
-  }
+.reply input {
+  padding: 10px;
+  width: 100%;
+  border: var(--main-border);
+  border-radius: 25px;
+  box-sizing: border-box;
+  transition: all 0.3s ease-in-out;
+}
 
-  .reply:focus-within input {
-      width: 95vw;
-      transform: translateX(-11%) translateY(-80px);
-  }
+.reply__column:last-child > i,
+.reply__column:last-child button {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+}
 
-  .reply:focus-within {
-      transform: translateY(80px);
-  }
+.reply__column:last-child > i {
+  right: 40px;
+  top: 8px;
+  font-size: 22px;
+}
+
+.reply__column button {
+  background-color: var(--yellow);
+  border: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+}
+
+.reply__column button i {
+  opacity: 1;
+}
+.reply__column button:focus,
+.reply__column button:active {
+  width: 300px;
+  outline: none;
+}
+
+.reply .reply__column:first-child,
+.reply .fa-smile-wink,
+.reply button {
+  transition: opacity 0.3s ease-in-out;
+}
+
+.reply:focus-within .reply__column:first-child,
+.reply:focus-within .fa-smile-wink,
+.reply:focus-within button {
+  opacity: 0;
+}
+
+.reply:focus-within input {
+  width: 100%;
+  transform: translateX(-12px) translateY(-80px);
+}
+
+.reply:focus-within {
+  transform: translateY(80px);
+}

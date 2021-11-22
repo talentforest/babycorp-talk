@@ -1,99 +1,103 @@
 .screen-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    display: flex;
-    height: 50px;
-    justify-content: space-between;
-    align-items: center;
-    padding: var(--horizontal-space);
-    margin-top: 40px;
-    
-    
+  width: 310px;
+  padding: 70px 20px 20px 20px;
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
+  background-color: #fff3be;
+  z-index: 1;
 }
 
 .screen-header__title {
-    font-size: 32px;
-    font-weight: 600;
+  font-size: 22px;
+  font-weight: 600;
+  font-family: "Roboto Slab";
+}
+
+.screen-header__icons {
+  font-size: 14px;
 }
 
 .screen-header__icons span {
-    margin-left: 25px;
-    position: relative;  
-    /* 밑 코드인 옆의 빨간 점은 이 아이콘을 relative해서 
-    absolute하게 위치한다고 써줘야 한다.... */
+  margin-left: 20px;
+  position: relative;
+}
+
+.badge-2 {
+  background-color: tomato;
+  border-radius: 2px;
+  width: 4px;
+  height: 4px;
+  display: flex;
+  position: absolute;
+  right: -4px;
+  top: -2px;
 }
 
 @keyframes upAndDownSearch {
-    0% {
-        transform: none;
-    }
-    50% {
-        transform: translateY(-10px) rotateY(10deg);
-    }
-    100% {
-        transform: none;
-    }
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px) rotateY(10deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 .screen-header__icons .fa-search:hover {
-    animation: upAndDownSearch 0.8s linear infinite;
+  color: rgb(107, 109, 255);
+  animation: upAndDownSearch 0.8s linear infinite;
 }
 
 @keyframes upAndDownDots {
-    0% {
-        transform: none;
-    }
-    50% {
-        transform: translateY(-10px) rotateY(10deg);
-    }
-    100% {
-        transform: none;
-    }
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px) rotateY(10deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 .screen-header__icons .fa-comment-dots:hover {
-    animation: upAndDownDots 0.8s linear infinite;
+  color: rgb(107, 109, 255);
+  animation: upAndDownDots 0.8s linear infinite;
 }
 
 @keyframes upAndDownMusic {
-    0% {
-        transform: none;
-    }
-    50% {
-        transform: translateY(-10px) rotateY(10deg);
-    }
-    100% {
-        transform: none;
-    }
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px) rotateY(10deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 .screen-header__icons .fa-music:hover {
-    animation: upAndDownMusic 0.8s linear infinite;
+  color: rgb(107, 109, 255);
+  animation: upAndDownMusic 0.8s linear infinite;
 }
 
 @keyframes upAndDownCog {
-    0% {
-        transform: none;
-    }
-    50% {
-        transform: translateY(-10px) rotateY(10deg);
-    }
-    100% {
-        transform: none;
-    }
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-10px) rotateY(10deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 
 .screen-header__icons .fa-cog:hover {
-    animation: upAndDownCog 1s linear infinite;
+  color: rgb(107, 109, 255);
+  animation: upAndDownCog 1s linear infinite;
 }
-
-
-.badge-2 {
-    background-color: tomato;
-    border-radius: 2px;
-    width: 4px;
-    height: 4px;
-    display: flex;
-    position: absolute;
-    right: -4px;
-    top: -2px;
-    }

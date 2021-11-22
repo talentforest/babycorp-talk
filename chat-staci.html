@@ -1,119 +1,122 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <link rel="stylesheet" href="css/styles.css" />
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Chat</title>
-</head>
-<body id="chat-screen">
-    <div class="status-bar"> 
+  </head>
+  <body>
+    <div class="whole-screen-chat">
+      <div class="top_fixed_screen"></div>
+      <div class="status-bar">
         <div class="status-bar__column">
-            <i class="fas fa-signal"></i>
-            <span>LG U+</span>
-            <i class="fas fa-wifi"></i>
+          <span>18:43</span>
+          <i class="fas fa-wifi"></i>
         </div>
+        <div class="status-bar__column"></div>
         <div class="status-bar__column">
-            <span>18:43</span>
+          <i class="fas fa-signal"></i>
+          <span>5G</span>
+          <i class="fas fa-battery-full fa-lg"></i>
         </div>
-        <div class="status-bar__column">
-            <i class="far fa-bell"></i>
-            <i class="fas fa-headphones-alt"></i>
-            <span>100%</span>
-            <i class="fas fa-battery-full fa-lg"></i>
-        </div>
-    </div>
-    
-    <header class="alt-header">
-        <div class="alt-header__column">
-            <a href="chats.html">
-                <i class="fas fa-angle-left fa-2x"></i>
-            </a>
-        </div>
-        <div class="alt-header__column">
-            <h1 class="alt-header__title">Staci</h1>
-        </div>
-        <div class="alt-header__column">
-            <span><i class="fas fa-search fa-lg"></i></span>   
-            <span><i class="fas fa-bars fa-lg"></i></span> 
-        </div>
-    </header>
+      </div>
 
-    <main class="main-screen main-chat">
-
-        <div class="chat__timestamp">
-            Saturday, June 20, 2021
+      <header class="chat-screen-staci">
+        <div class="alt-header__column">
+          <a href="chats.html">
+            <i class="fas fa-angle-left fa-2x"></i>
+          </a>
         </div>
+        <div class="alt-header__column">
+          <h1 class="alt-header__title">Staci</h1>
+        </div>
+        <div class="alt-header__column">
+          <span><i class="fas fa-search fa-lg"></i></span>
+          <span><i class="fas fa-bars fa-lg"></i></span>
+        </div>
+      </header>
+
+      <main class="main-screen main-chat">
+        <div class="chat__timestamp">Saturday, June 20, 2021</div>
 
         <div class="message-row">
-            <div class="messageAnimation1">
-                <img src="./photos/staci.jpeg">
-                <div class="message-row__content">
-                    <span class="message__author">Staci</span>
-                    <div class="message__info">
-                        <span class="message__bubble">Tim!</span>
-                        <span class="message__time">21:05</span>
-                    </div>
-                </div>
+          <div class="messageAnimation1">
+            <img src="./photos/staci.jpeg" />
+            <div class="message-row__content">
+              <span class="message__author">Staci</span>
+              <div class="message__info">
+                <span class="message__bubble">Tim!</span>
+                <span class="message__time">21:05</span>
+              </div>
             </div>
+          </div>
         </div>
         <div class="message-row">
-            <div class="messageAnimation2">
-                <img src="./photos/staci.jpeg">
-                <div class="message-row__content">
-                    <span class="message__author">Staci</span>
-                    <div class="message__info">
-                        <span class="message__bubble">Do you know where the Boss is? He is out of touch!</span>
-                        <span class="message__time">21:26</span>
-                    </div>
-                </div>
+          <div class="messageAnimation2">
+            <img src="./photos/staci.jpeg" />
+            <div class="message-row__content">
+              <span class="message__author">Staci</span>
+              <div class="message__info">
+                <span class="message__bubble"
+                  >Do you know where the Boss is? He is out of touch!</span
+                >
+                <span class="message__time">21:26</span>
+              </div>
             </div>
+          </div>
         </div>
         <div class="message-row message-row--own">
-            <div class="messageAnimation3">
-                <div class="message-row__content">
-                    <div class="message__info">
-                        <span class="message__bubble">What happened? He is with Gigi</span>
-                        <span class="message__time">21:35</span>
-                    </div>
-                </div>
+          <div class="messageAnimation3">
+            <div class="message-row__content">
+              <div class="message__info">
+                <span class="message__bubble"
+                  >What happened? He is with Gigi</span
+                >
+                <span class="message__time">21:35</span>
+              </div>
             </div>
+          </div>
         </div>
         <div class="message-row">
-            <div class="messageAnimation4">
-                <img src="./photos/staci.jpeg">
-                <div class="message-row__content">
-                    <span class="message__author">Staci</span>
-                    <div class="message__info">
-                        <span class="message__bubble">Baby Corp is in situation now! Can you take him here right now?</span>
-                        <span class="message__time">21:36</span>
-                    </div>
-                </div>
+          <div class="messageAnimation4">
+            <img src="./photos/staci.jpeg" />
+            <div class="message-row__content">
+              <span class="message__author">Staci</span>
+              <div class="message__info">
+                <span class="message__bubble"
+                  >Baby Corp is in situation now! Can you take him here right
+                  now?</span
+                >
+                <span class="message__time">21:36</span>
+              </div>
             </div>
+          </div>
         </div>
-    </main>
-    
-    <form class="reply">
-        <div class="reply__column">
-            <i class="far fa-plus-square fa-lg"></i>
-        </div>
-        <div class="reply__column">
-            <input type="text" placeholder="Write a message..." />
-            <i class="far fa-smile-wink fa-2x"></i>
-            <button>
-                <i class="fas fa-arrow-up"></i>
-            </button>
-        </div>
-    </form>
+      </main>
 
-    <div id="no-mobile">
-        <span>Your screen is too big...</span>
+      <form class="reply">
+        <div class="reply__column">
+          <i class="far fa-plus-square fa-lg"></i>
+        </div>
+        <div class="reply__column">
+          <input type="text" placeholder="Write a message..." />
+          <i class="far fa-smile-wink fa-2x"></i>
+          <button>
+            <i class="fas fa-arrow-up"></i>
+          </button>
+        </div>
+      </form>
+
+      <div id="no-mobile">
+        <span>Your screen is too big 😵</span>
+      </div>
+
+      <script
+        src="https://kit.fontawesome.com/6478f529f2.js"
+        crossorigin="anonymous"
+      ></script>
     </div>
-
-    <script
-    src="https://kit.fontawesome.com/6478f529f2.js"
-    crossorigin="anonymous">
-</script>
-</body>
+  </body>
 </html>

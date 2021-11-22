@@ -1,66 +1,73 @@
+.whold-screen {
+  position: relative;
+}
+
 .nav {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 100%;
-    background-color: #f5f4da;
-    padding: 15px 50px;
-    box-sizing: border-box;
-    border-top: 1px solid rgba(121, 121, 121, 0.3);
+  position: absolute;
+  margin: 0 auto;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  background-color: aliceblue;
+  padding: 15px 50px;
+  box-sizing: border-box;
+  border-top: 1px solid rgba(121, 121, 121, 0.3);
+  border-bottom-left-radius: 50px;
+  border-bottom-right-radius: 50px;
+  font-size: 12px;
 }
 .nav__list {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 .nav__link {
-    position: relative;
-    color: #2e363e;
+  position: relative;
+  color: #2e363e;
 }
 
 @keyframes notificationAnimation {
-    0% {
-        transform: none;
-    }
-    50% {
-        transform: translateY(-3px) rotateY(10deg);
-    }
-    100% {
-        transform: none;
-    }
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-3px) rotateY(10deg);
+  }
+  100% {
+    transform: none;
+  }
 }
 
-.nav__notification {
-    background-color: tomato;
-    width: 24px;
-    height: 24px;
-    border-radius: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: white;
-    font-size: 14px;
-    font-weight: 600;
-    position: absolute;
-    left: 20px;
-    bottom: 15px;
-    animation: notificationAnimation 1s ease-in-out infinite;
+.nav__notification-badge {
+  background-color: tomato;
+  width: 16px;
+  height: 16px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 6px;
+  position: absolute;
+  left: 15px;
+  bottom: 12px;
+  animation: notificationAnimation 1s ease-in-out infinite;
 }
 
 .nav__new {
-    background-color: tomato;
-    height: 6px;
-    width: 6px;
-    border-radius: 3px;
-    display: flex;
-    position: absolute;
-    left: 28px;
-    bottom: 28px;
+  background-color: tomato;
+  height: 6px;
+  width: 6px;
+  border-radius: 3px;
+  display: flex;
+  position: absolute;
+  left: 24px;
+  bottom: 20px;
 }
 
 .nav__btn i:first-child:hover,
 .nav__btn i:nth-child(2):hover,
 .nav__btn i:nth-child(3):hover,
 .nav__btn i:last-child:hover {
-    color: rgb(247, 140, 0);    
+  color: rgb(247, 140, 0);
 }
