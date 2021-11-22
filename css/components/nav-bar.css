@@ -9,13 +9,13 @@
   left: 0;
   right: 0;
   width: 100%;
-  background-color: aliceblue;
+  background-color: rgb(255, 252, 210);
   padding: 15px 50px;
   box-sizing: border-box;
   border-top: 1px solid rgba(121, 121, 121, 0.3);
   border-bottom-left-radius: 50px;
   border-bottom-right-radius: 50px;
-  font-size: 12px;
+  font-size: 11px;
 }
 .nav__list {
   display: flex;
@@ -50,7 +50,7 @@
   font-size: 6px;
   position: absolute;
   left: 15px;
-  bottom: 12px;
+  bottom: 10px;
   animation: notificationAnimation 1s ease-in-out infinite;
 }
 
@@ -63,11 +63,4 @@
   position: absolute;
   left: 24px;
   bottom: 20px;
-}
-
-.nav__btn i:first-child:hover,
-.nav__btn i:nth-child(2):hover,
-.nav__btn i:nth-child(3):hover,
-.nav__btn i:last-child:hover {
-  color: rgb(247, 140, 0);
 }
