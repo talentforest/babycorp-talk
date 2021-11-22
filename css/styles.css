@@ -37,7 +37,8 @@ body {
   justify-content: center;
   width: 350px;
   margin: 0px auto;
-  border-radius: 50px;
+  border-top-left-radius: 50px;
+  border-top-right-radius: 50px;
   top: 0;
   height: 650px;
   background-color: #fff3be;

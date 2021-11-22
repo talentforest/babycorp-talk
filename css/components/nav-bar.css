@@ -3,18 +3,16 @@
 }
 
 .nav {
-  position: absolute;
-  margin: 0 auto;
-  bottom: 0;
+  position: fixed;
+  margin: 0px auto;
+  bottom: 0px;
   left: 0;
   right: 0;
-  width: 100%;
+  width: 350px;
   background-color: rgb(255, 252, 210);
   padding: 15px 50px;
   box-sizing: border-box;
   border-top: 1px solid rgba(121, 121, 121, 0.3);
-  border-bottom-left-radius: 50px;
-  border-bottom-right-radius: 50px;
   font-size: 11px;
 }
 .nav__list {
