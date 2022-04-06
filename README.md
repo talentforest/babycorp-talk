@@ -1,4 +1,4 @@
-# Kokoa Clone 2021 Update
+# Baby Corp Talk
 
-CSS got so much better!
-HTML & CSS are so much fun!
+### Create BabyCorp Talk App
+with HTML and CSS
